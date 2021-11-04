@@ -1,9 +1,13 @@
 <style>
-
-  @keyframes flip2{
-    
-  }
   
+  @keyframes flip2{
+    0%{ margin-top: 0;
+      }
+    50%{ margin-bottom: 100;
+      }
+    100%{ top: 0px;   
+      } 
+  }
   
   body{
     background-color: #5B2C6F 
@@ -22,7 +26,7 @@
     background-color: #D2B4DE;
     width: 200px;
     height: 15px;
-    position: absolute;
+    position: absolute;  
     border-radius: 13%;
   }
   
@@ -64,7 +68,8 @@
     bottom: 61%;
     border-radius: 51% 49% 0% 100% / 100% 100% 0% 0% ;
     animation-name: flip2;
-    animation-duration: 2s;
+    animation-duration: 1s;
+    animation-direction: reverse;
     }
   
   .left3{background-color: orange;
@@ -243,30 +248,39 @@
     border-radius: 51% 49% 0% 100% / 100% 100% 0% 0%;
     }
   
-  .right6{background-color: white;
+  .right2{background-color: white;
+    background-image: linear-gradient(45deg);
+    transform: skewY(-25deg);
     width: 200px;
     height: 3px;
     position: absolute;
+    top: 21%;
     right: 0%;
-    bottom: 7%;
+    bottom: 99%;
+    animation-direction: reverse
     }
   
-  .right7{background-color: white;
+  .right3{background-color: white;
+    background-image: linear-gradient(45deg);
+    transform: skewY(-18deg);
     width: 200px;
     height: 3px;
     position: absolute;
+    top: 30%;
     right: 0%;
-    bottom: 8%;
+    bottom: 88%;
     }
   
-  .right8{background-color: white;
-    width: 200px;
+  .right4{background-color: white;
+    background-image: linear-gradient(45deg);
+    transform: skewY(-40deg);
+    width: 180px;
     height: 3px;
     position: absolute;
-    right: 0%;
-    bottom: 9%;
-    
-  }
+    top: 7%;
+    right: 5%;
+    bottom: 10%;
+    }
 </style>
 <div class="book">
   <div class="book-cover left-cover"></div>
@@ -294,8 +308,4 @@
   <div class="right2"></div>
   <div class="right3"></div>
   <div class="right4"></div>
-  <div class="right5"></div>
-  <div class="right6"></div>
-  <div class="right7"></div>
-  <div class="right8"></div>
 </div>
